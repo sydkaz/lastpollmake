@@ -1,0 +1,11 @@
+# the scheme  the time stamp should be in epoch so when  its next day it will give the longer window
+#I have kept the schema simple so searching would be faster and dont have to deal with the joins
+{
+  id:long,
+  time_stamp:timestamp,
+  lat:Float,
+  long:Float,
+  city:String,
+  country: String,
+  region: String
+}

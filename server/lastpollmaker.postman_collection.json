@@ -1,0 +1,517 @@
+{
+	"info": {
+		"_postman_id": "4965a511-4cea-467d-808c-5ea051d0e865",
+		"name": "lastpollmaker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4510705"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/users/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY0MWU3OWQzZjUwOWUyYzdhNjQ1N2ZjOTVmY2U1MGNjOGM3M2VmMDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsLWFwcC04YWExYyIsImF1ZCI6InNvY2lhbC1hcHAtOGFhMWMiLCJhdXRoX3RpbWUiOjE1NjU5NTI5NzIsInVzZXJfaWQiOiJGelhIMmNsWWhKYlh3a1Btd0p0U1pTZDczZnMxIiwic3ViIjoiRnpYSDJjbFloSmJYd2tQbXdKdFNaU2Q3M2ZzMSIsImlhdCI6MTU2NTk1Mjk3MiwiZXhwIjoxNTY1OTU2NTcyLCJlbWFpbCI6ImVsZW1zaGFsaXRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImVsZW1zaGFsaXRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.AfH2xnkyDf6ZfCM7qb6cqIiI0RmtPnLpXWAPCu2qyuBHHFaTK6mBWCJho-VaV1p9aLskuan_zcna18GKANK5cywX-9zTBcjrL_H6OfAJ6qjOL7sRpPvO_AJG8B7QW_33in5C0WL2foKgRT1k5Gf0v7Okgg5eyrpQgmOiv3fo5hyeW0hCxT1i14wWypq6EmKhYIwNyOjD7AgncCzYncuxouXz89FcKO0xHjC5R6rgrqTUQ-0A1vzDDVX_FJhLN-rEVlFR3gL1dEtcW6YBcNqHJArBnv98SqyPVasOTMmvpG8eJqbjKdkfx5b0e8vq8Q-HGvKtvjXX3D-1bbnnPZK2Jg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"sam\",\"email\":\"sam@sam.com\",\"password\":\"111111\",\"password2\":\"111111\"}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/signin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY0MWU3OWQzZjUwOWUyYzdhNjQ1N2ZjOTVmY2U1MGNjOGM3M2VmMDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsLWFwcC04YWExYyIsImF1ZCI6InNvY2lhbC1hcHAtOGFhMWMiLCJhdXRoX3RpbWUiOjE1NjU5NTI5NzIsInVzZXJfaWQiOiJGelhIMmNsWWhKYlh3a1Btd0p0U1pTZDczZnMxIiwic3ViIjoiRnpYSDJjbFloSmJYd2tQbXdKdFNaU2Q3M2ZzMSIsImlhdCI6MTU2NTk1Mjk3MiwiZXhwIjoxNTY1OTU2NTcyLCJlbWFpbCI6ImVsZW1zaGFsaXRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImVsZW1zaGFsaXRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.AfH2xnkyDf6ZfCM7qb6cqIiI0RmtPnLpXWAPCu2qyuBHHFaTK6mBWCJho-VaV1p9aLskuan_zcna18GKANK5cywX-9zTBcjrL_H6OfAJ6qjOL7sRpPvO_AJG8B7QW_33in5C0WL2foKgRT1k5Gf0v7Okgg5eyrpQgmOiv3fo5hyeW0hCxT1i14wWypq6EmKhYIwNyOjD7AgncCzYncuxouXz89FcKO0xHjC5R6rgrqTUQ-0A1vzDDVX_FJhLN-rEVlFR3gL1dEtcW6YBcNqHJArBnv98SqyPVasOTMmvpG8eJqbjKdkfx5b0e8vq8Q-HGvKtvjXX3D-1bbnnPZK2Jg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"sam\",\"email\":\"sam@sam.com\",\"password\":\"111111\",\"password2\":\"111111\"}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyY2MzN2EyZjA1ZWQzMzk5MzBiNjNmNCIsIm5hbWUiOiJzYW0iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2VlZDcyNWUxNzgwODM1NDZjMjUzMGFlMTk0YzhmNWY3P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTY1NzU1NDQ2OSwiZXhwIjoxNjU3NTU4MDY5fQ.gbzjj-56BggyJFAUzqh8FgzIg94rCbEahDi_oPMswhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"is honda a good car?\",\"name\":\"question about Honda\",\"endDate\":\"Mon Jul 11 2023 19:48:54 GMT+0500\",\"startDate\":\"Mon Jul 11 2022 19:48:54 GMT+0500\",\n\"choices\":[{\"choicetext\":\"Yes\"}, {\"choicetext\":\"No\"}, {\"choicetext\":\"Maybe\"}]}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/poll/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/ Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyY2MzN2EyZjA1ZWQzMzk5MzBiNjNmNCIsIm5hbWUiOiJzYW0iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2VlZDcyNWUxNzgwODM1NDZjMjUzMGFlMTk0YzhmNWY3P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTY1NzU1MDc2MCwiZXhwIjoxNjU3NTU0MzYwfQ.eVlABmb-wIoYW1HyhCrESP_PMlYeY9SLO9xWdwCi9n8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"is toyota a good car?\",\"name\":\"question about toyota\",\"endDate\":\"Mon Jul 11 2023 19:48:54 GMT+0500\",\"startDate\":\"Mon Jul 11 2022 19:48:54 GMT+0500\"}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/poll/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/test/find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyY2MzN2EyZjA1ZWQzMzk5MzBiNjNmNCIsIm5hbWUiOiJzYW0iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2VlZDcyNWUxNzgwODM1NDZjMjUzMGFlMTk0YzhmNWY3P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTY1NzU1MDc2MCwiZXhwIjoxNjU3NTU0MzYwfQ.eVlABmb-wIoYW1HyhCrESP_PMlYeY9SLO9xWdwCi9n8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"is toyota a good car?\",\"name\":\"question about toyota\",\"endDate\":\"Mon Jul 11 2023 19:48:54 GMT+0500\",\"startDate\":\"Mon Jul 11 2022 19:48:54 GMT+0500\"}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/test/find",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"test",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyY2MzN2EyZjA1ZWQzMzk5MzBiNjNmNCIsIm5hbWUiOiJzYW0iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2VlZDcyNWUxNzgwODM1NDZjMjUzMGFlMTk0YzhmNWY3P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTY1NzU1MDc2MCwiZXhwIjoxNjU3NTU0MzYwfQ.eVlABmb-wIoYW1HyhCrESP_PMlYeY9SLO9xWdwCi9n8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"is toyota a good car?\",\"name\":\"question about toyota\",\"endDate\":\"Mon Jul 11 2023 19:48:54 GMT+0500\",\"startDate\":\"Mon Jul 11 2022 19:48:54 GMT+0500\"}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/test/find",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"test",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/5d581a936174a760aa353032/vote/5d581a936174a760aa353034",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyY2MzN2EyZjA1ZWQzMzk5MzBiNjNmNCIsIm5hbWUiOiJzYW0iLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2VlZDcyNWUxNzgwODM1NDZjMjUzMGFlMTk0YzhmNWY3P3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTY1NzU1MDc2MCwiZXhwIjoxNjU3NTU0MzYwfQ.eVlABmb-wIoYW1HyhCrESP_PMlYeY9SLO9xWdwCi9n8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"pollId\":\"5d581b798bde82631c970b9b\"}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/poll/62cc38b7171b1c3c3e319965/vote/5d581a936174a760aa353034",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						"62cc38b7171b1c3c3e319965",
+						"vote",
+						"5d581a936174a760aa353034"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lastpoll-4gooonae6.vercel.app/api/users/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY0MWU3OWQzZjUwOWUyYzdhNjQ1N2ZjOTVmY2U1MGNjOGM3M2VmMDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc29jaWFsLWFwcC04YWExYyIsImF1ZCI6InNvY2lhbC1hcHAtOGFhMWMiLCJhdXRoX3RpbWUiOjE1NjU5NTI5NzIsInVzZXJfaWQiOiJGelhIMmNsWWhKYlh3a1Btd0p0U1pTZDczZnMxIiwic3ViIjoiRnpYSDJjbFloSmJYd2tQbXdKdFNaU2Q3M2ZzMSIsImlhdCI6MTU2NTk1Mjk3MiwiZXhwIjoxNTY1OTU2NTcyLCJlbWFpbCI6ImVsZW1zaGFsaXRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImVsZW1zaGFsaXRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.AfH2xnkyDf6ZfCM7qb6cqIiI0RmtPnLpXWAPCu2qyuBHHFaTK6mBWCJho-VaV1p9aLskuan_zcna18GKANK5cywX-9zTBcjrL_H6OfAJ6qjOL7sRpPvO_AJG8B7QW_33in5C0WL2foKgRT1k5Gf0v7Okgg5eyrpQgmOiv3fo5hyeW0hCxT1i14wWypq6EmKhYIwNyOjD7AgncCzYncuxouXz89FcKO0xHjC5R6rgrqTUQ-0A1vzDDVX_FJhLN-rEVlFR3gL1dEtcW6YBcNqHJArBnv98SqyPVasOTMmvpG8eJqbjKdkfx5b0e8vq8Q-HGvKtvjXX3D-1bbnnPZK2Jg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"sam\",\"email\":\"sam@sam.com\",\"password\":\"111111\",\"password2\":\"111a111\"}"
+				},
+				"url": {
+					"raw": "https://lastpoll-4gooonae6.vercel.app/api/users/login",
+					"protocol": "https",
+					"host": [
+						"lastpoll-4gooonae6",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lastpoll-4gooonae6.vercel.app/api/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://lastpoll-4gooonae6.vercel.app/api/users/login",
+					"protocol": "http",
+					"host": [
+						"lastpoll-4gooonae6",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lastpoll-4gooonae6.vercel.app/api/users//current",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://lastpoll-4gooonae6.vercel.app/api/users//current",
+					"protocol": "http",
+					"host": [
+						"lastpoll-4gooonae6",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://lastpoll-4gooonae6.vercel.app/api/poll/5d581a8a6174a760aa35302d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://lastpoll-4gooonae6.vercel.app/api/poll/5d581a8a6174a760aa35302d",
+					"protocol": "http",
+					"host": [
+						"lastpoll-4gooonae6",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"poll",
+						"5d581a8a6174a760aa35302d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/5d581a8a6174a760aa35302d",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/poll/5d581a8a6174a760aa35302d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						"5d581a8a6174a760aa35302d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/5d581b798bde82631c970b9b",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/poll/5d581b798bde82631c970b9b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						"5d581b798bde82631c970b9b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/5d581b798bde82631c970b9b/vote/110",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/poll/5d581b798bde82631c970b9b/vote/110",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						"5d581b798bde82631c970b9b",
+						"vote",
+						"110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/vote/5d58cd1aaeabe769c599c83d",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/poll/5d581a936174a760aa353032/vote/5d581a936174a760aa353034",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/poll/5d581a936174a760aa353032/vote/5d581a936174a760aa353034",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"poll",
+						"5d581a936174a760aa353032",
+						"vote",
+						"5d581a936174a760aa353034"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
